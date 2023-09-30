@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-style--: "Kanit", sans-serif;
+  --font-family--: "Poppins", sans-serif;
+  --font-color--: hsl(240,100%,50%);
+  --font-white--: hsl(120,120%,120%); 
+}
+
+/* .bg{
+      width: 100%;
+      min-height: 100vh;
+      background-image: url(img/background.jpg);
+      background-position: center;
+      background-size: cover;
+      padding: 10px 10%;
+      overflow: hidden;
+} */
+
+nav {
+  font-family: var(--font-family--);
+  font-size: 0.75rem;
+  padding: 10px 20px; /* พื้นที่ด้านใน บนล่าง10px ขวาซ้าย20px */
+  display: flex; /* จัดวางรูปแบบ flex */
+  align-items: center;
+  justify-content: space-between; /*ระยะห่างซ้ายขวาขนาด item เท่ากัน */
+}
+
+.logo-images {
+  /* กำหนดขนาด logo */
+  padding: 20px;
+  width: 8rem;
+  height: 8rem;
+}
+
+nav ul li {
+  display: inline-block; /* แนวนอนและขยายด้านใน */
+  list-style: none; /* ลบ li ออก*/
+  margin: 5px 20px; /* ระยะห่างด้านนอก บนล่าง5px , ซ้ายขวา20px*/
+}
+
+nav ul li a {
+  font-weight: bold;
+  text-decoration: none; /* ลบขีดเส้นใต้ tag a ออก  */
+  color: var(--font-color--);
+}
+
+nav ul li a:hover {     /* แต่ง tag a ให้มีลูกเล่น */
+  background-color: var(--font-white--);
+  border: 0.15rem solid hsl(120, 120%, 120%);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+
+.cv-btn {
+  text-decoration: none; /*ลบขีดเส้นใต้ tag a ออก*/
+  margin: 40px;
+  font-weight: bold;
+}
+
+.container {
+  margin: px;
+  font-family: var(--font-style--);
+  text-align: center;
+}
+
+h1{
+      font-size: 2.8rem;
+      filter: drop-shadow(5px 1px 4px hsl(239, 72%, 75%)) ;
+}
+
+.home-profile{
+      border-radius: 5.5rem;
+      overflow: hidden; /* ซ่อนข้อมูลทั้งหมด */
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+}
+.home-profile-img{
+    filter: drop-shadow(10px 5px 8px hsl(240,50%,50%));
+}
+
+
+.shape-html,
+.shape-js,
+.home-shape-tailwind{
+  position: absolute; 
+  opacity: 2;  /* 0.0 (โปร่งใสทั้งหมด) และ 1.0 (ทึบแสงทั้งหมด) */
+}
+
+.shape-html{
+  width: 5rem;
+  top: 25rem;
+  right: 50rem;
+  transform: rotate(1deg); /* กำหนดความเอียงของภาพ */
+  z-index: -1; /* z-index สูงกว่าจะปรากฏอยู่ด้านบนขององค์ประกอบที่มี z-index ต่ำกว่า */
+}
+
+.shape-js{
+  width: 5rem; 
+  bottom: 8rem; /* เพื่อระบุตำแหน่งขององค์ประกอบ absolute ได้แม่นยำ t, r, b , l  */
+  right: 39rem;      /* เพื่อระบุตำแหน่งขององค์ประกอบ absolute ได้แม่นยำ t, r, b , l  */
+  transform: rotate(.5deg); /* กำหนดความเอียงของภาพ */
+   /* ไม่แสดง z-index ภาพจะทับ profile */
+   filter: drop-shadow(5px 5px 6px hsl(59,100%,57%));
+}
+
+
+.home-shape-tailwind{
+  width: 5.5rem;
+  top: 17.7rem; /* ระยะห่างจากความสูง */
+  right: 39.5rem; /* ระห่างจากด้านขวา */
+  transform: rotate(15deg); /* กำหนดความเอียงของภาพ */
+  z-index: -1; /* z-index สูงกว่าจะอยู่ด้านบนขององค์ประกอบที่มี z-index ต่ำกว่า */
+  filter: drop-shadow(5px 8px 6px hsl(300,76%,72%));
+}
+
+.home-title-left{
+  font-family: ;
+}
+
+
