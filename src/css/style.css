@@ -10,8 +10,8 @@
 :root {
   --font-style--: "Kanit", sans-serif;
   --font-family--: "Poppins", sans-serif;
-  --font-color--: hsl(240,100%,50%);
-  --font-white--: hsl(120,120%,120%); 
+  --font-color--: hsl(240, 100%, 50%);
+  --color-white--: hsl(120, 120%, 120%);
 }
 
 /* .bg{
@@ -52,9 +52,10 @@ nav ul li a {
   color: var(--font-color--);
 }
 
-nav ul li a:hover {     /* แต่ง tag a ให้มีลูกเล่น */
-  background-color: var(--font-white--);
-  border: 0.15rem solid hsl(120, 120%, 120%);
+nav ul li a:hover {
+  /* แต่ง tag a ให้มีลูกเล่น */
+  background-color: var(--color-white--);
+  outline: 0.15rem  var(--color-white--);
   border-radius: 10px;
   padding: 10px;
   font-size: 1.1rem;
@@ -73,59 +74,21 @@ nav ul li a:hover {     /* แต่ง tag a ให้มีลูกเล่�
   text-align: center;
 }
 
-h1{
-      font-size: 2.8rem;
-      filter: drop-shadow(5px 1px 4px hsl(239, 72%, 75%)) ;
+h1 {
+  font-size: 2.8rem;
+  filter: drop-shadow(5px 1px 4px hsl(239, 72%, 75%));
 }
 
-.home-profile{
-      border-radius: 5.5rem;
-      overflow: hidden; /* ซ่อนข้อมูลทั้งหมด */
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
+.home-profile {
+  /* border-radius: 5.5rem; */
+  overflow: hidden; /* ซ่อนข้อมูลทั้งหมด */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
-.home-profile-img{
-    filter: drop-shadow(10px 5px 8px hsl(240,50%,50%));
-}
-
-
-.shape-html,
-.shape-js,
-.home-shape-tailwind{
-  position: absolute; 
-  opacity: 2;  /* 0.0 (โปร่งใสทั้งหมด) และ 1.0 (ทึบแสงทั้งหมด) */
-}
-
-.shape-html{
-  width: 5rem;
-  top: 25rem;
-  right: 50rem;
-  transform: rotate(1deg); /* กำหนดความเอียงของภาพ */
-  z-index: -1; /* z-index สูงกว่าจะปรากฏอยู่ด้านบนขององค์ประกอบที่มี z-index ต่ำกว่า */
-}
-
-.shape-js{
-  width: 5rem; 
-  bottom: 8rem; /* เพื่อระบุตำแหน่งขององค์ประกอบ absolute ได้แม่นยำ t, r, b , l  */
-  right: 39rem;      /* เพื่อระบุตำแหน่งขององค์ประกอบ absolute ได้แม่นยำ t, r, b , l  */
-  transform: rotate(.5deg); /* กำหนดความเอียงของภาพ */
-   /* ไม่แสดง z-index ภาพจะทับ profile */
-   filter: drop-shadow(5px 5px 6px hsl(59,100%,57%));
-}
-
-
-.home-shape-tailwind{
-  width: 5.5rem;
-  top: 17.7rem; /* ระยะห่างจากความสูง */
-  right: 39.5rem; /* ระห่างจากด้านขวา */
-  transform: rotate(15deg); /* กำหนดความเอียงของภาพ */
-  z-index: -1; /* z-index สูงกว่าจะอยู่ด้านบนขององค์ประกอบที่มี z-index ต่ำกว่า */
-  filter: drop-shadow(5px 8px 6px hsl(300,76%,72%));
-}
-
-.home-title-left{
-  font-family: ;
+.home-profile-img {
+  width: 320px;
+  filter: drop-shadow(10px 5px 20px hsl(240, 95%, 70%));
 }
 
 
