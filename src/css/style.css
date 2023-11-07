@@ -1,6 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Poppins:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Noto+Sans+Thai:wght@500&family=Roboto:wght@500&display=swap');
 
+
+body{
+  background-image: url("https://media.discordapp.net/attachments/1152477567828381716/1171349384986890240/background.png?ex=655c5b20&is=6549e620&hm=40132610d335d1f03b65973672a78f446261d46572e6e1d75eaa91244aa7e33a&=&width=1012&height=572");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 * {
   margin: 0;
   padding: 0;
@@ -8,93 +13,57 @@
 }
 
 :root {
-  --font-style--: "Kanit", sans-serif;
-  --font-family--: "Poppins", sans-serif;
-  --font-color--: hsl(240, 100%, 50%);
-  --color-white--: hsl(120, 120%, 120%);
+  --font-style: "Kanit", sans-serif;
+  --font-family:"Roboto",sans-serif;;
+  --font-color: hsl(240, 100%, 50%);
+  --color-white: hsl(120, 120%, 120%);
 }
 
-/* .bg{
-      width: 100%;
-      min-height: 100vh;
-      background-image: url(img/background.jpg);
-      background-position: center;
-      background-size: cover;
-      padding: 10px 10%;
-      overflow: hidden;
-} */
-
-nav {
-  font-family: var(--font-family--);
-  font-size: 0.75rem;
-  padding: 10px 20px; /* พื้นที่ด้านใน บนล่าง10px ขวาซ้าย20px */
-  display: flex; /* จัดวางรูปแบบ flex */
+.container{
+  display: flex;
   align-items: center;
-  justify-content: space-between; /*ระยะห่างซ้ายขวาขนาด item เท่ากัน */
+  max-width: 750px;
+  margin: 50px auto;
+  background-color: hsl(61, 99%, 65%);
+  width: 50rem;
+  height: 28rem;
+  border-radius: 100px;
+  filter: drop-shadow(5px 5px 10px hsl(191, 99%, 65%));
 }
 
-.logo-images {
-  /* กำหนดขนาด logo */
-  padding: 20px;
-  width: 8rem;
-  height: 8rem;
-}
 
-nav ul li {
-  display: inline-block; /* แนวนอนและขยายด้านใน */
-  list-style: none; /* ลบ li ออก*/
-  margin: 5px 20px; /* ระยะห่างด้านนอก บนล่าง5px , ซ้ายขวา20px*/
-}
-
-nav ul li a {
-  font-weight: bold;
-  text-decoration: none; /* ลบขีดเส้นใต้ tag a ออก  */
-  color: var(--font-color--);
-}
-
-nav ul li a:hover {
-  /* แต่ง tag a ให้มีลูกเล่น */
-  background-color: var(--color-white--);
-  outline: 0.15rem  var(--color-white--);
-  border-radius: 10px;
-  padding: 10px;
-  font-size: 1.1rem;
-  font-weight: bolder;
-}
-
-.cv-btn {
-  text-decoration: none; /*ลบขีดเส้นใต้ tag a ออก*/
-  margin: 40px;
-  font-weight: bold;
-}
-
-.container {
-  margin: px;
-  font-family: var(--font-style--);
-  text-align: center;
-}
 
 h1 {
+  color: hsl(0, 100%, 99%);
+  margin-top: 90px;
+  text-align: center;
+  font-family: var(--font-family);
+  font-weight: bold;
   font-size: 2.8rem;
-  filter: drop-shadow(5px 1px 4px hsl(239, 72%, 75%));
+  filter: drop-shadow(1px 1px 4px hsl(239, 72%, 75%));
 }
 
-.home-profile {
-  /* border-radius: 5.5rem; */
-  overflow: hidden; /* ซ่อนข้อมูลทั้งหมด */
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
+
 .home-profile-img {
   width: 320px;
   filter: drop-shadow(10px 5px 20px hsl(240, 95%, 70%));
 }
 
-/* .home-title-left{
-  font-family: var(--font-style--);
-  margin-left: 300px;
-} */
+.home-profile p{
+  text-align: right;
+}
+
+ 
+p{
+  color: var(--font-color);
+  text-align: left;
+  padding-bottom: 20px;
+  padding: 0 auto;
+  font-family: var(--font-style);
+  font-size: large;
+}
+
+
 
 
 
